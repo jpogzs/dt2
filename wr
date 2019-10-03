@@ -1,4 +1,3 @@
-;#UseHook
 #NoEnv
 #SingleInstance force
 SendMode Input 
@@ -9,7 +8,7 @@ SetCapsLockState, Off
 Ins::Suspend
 
 delay()
-{	
+{
   Random, delay, 50, 80
   Sleep, delay
 }
