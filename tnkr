@@ -1,4 +1,4 @@
-#UseHook
+;#UseHook
 #NoEnv
 #SingleInstance force
 SendMode Input 
@@ -6,27 +6,44 @@ SetWorkingDir %A_ScriptDir%
 SetNumlockState, AlwaysOn
 SetCapsLockState, Off
 
+Ins::Suspend
+
 delay()
 {	
   Random, delay, 50, 60
   Sleep, delay
 }
 
-r::
-Send, z
-delay()
-Send, x
-delay()
-Send, r
-delay()
+$r::
+  Send, z
+    delay()
+  Send, x
+    delay()
+  Send, r
+    delay()
 return
 
-f::
-Send, g
-delay()
-Send, q
-delay()
-Send, w
-delay()
+$f::
+  Send, g
+    delay()
+  Send, q
+    delay()
+  Send, w
+    delay()
 return
+
+$Space::
+  Loop
+    {
+      ;Send, {Space}
+      Send, x
+      Sleep 10
+      If !GetKeyState(Space,"P")
+      break
+    } 
+return
+
+
+
+
 
