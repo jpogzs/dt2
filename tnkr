@@ -1,0 +1,32 @@
+#UseHook
+#NoEnv
+#SingleInstance force
+SendMode Input 
+SetWorkingDir %A_ScriptDir%  
+SetNumlockState, AlwaysOn
+SetCapsLockState, Off
+
+delay()
+{	
+  Random, delay, 50, 60
+  Sleep, delay
+}
+
+r::
+Send, z
+delay()
+Send, x
+delay()
+Send, r
+delay()
+return
+
+f::
+Send, g
+delay()
+Send, q
+delay()
+Send, w
+delay()
+return
+
