@@ -21,7 +21,6 @@ $r::
     delay()
   Send, r
     delay()
-Reload
 return
 
 $f::
@@ -31,7 +30,6 @@ $f::
     delay()
   Send, w
     delay()
-Reload
 return
 
 $Space::
