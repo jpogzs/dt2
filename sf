@@ -1,4 +1,3 @@
-;#UseHook
 #NoEnv
 #SingleInstance force
 SendMode Input 
@@ -9,32 +8,41 @@ SetCapsLockState, Off
 Ins::Suspend
 
 delay()
-{	
+{
   Random, delay, 50, 80
   Sleep, delay
 }
 
 $q::
-  Send, {p Down}{Click, R}{p Up}
-  Send, q
+  Send, {p Down}
     delay()
-  Send, a
+  Send, {Click, R}
+    delay()
+  Send, {p Up}
+    delay()
+  Send, q
     delay()
 return
 
 $w::
-  Send, {p Down}{Click, R}{p Up}
-  Send, w
+  Send, {p Down}
     delay()
-  Send, a
+  Send, {Click, R}
+    delay()
+  Send, {p Up}
+    delay()
+  Send, w
     delay()
 return
 
 $e::
-  Send, {p Down}{Click, R}{p Up}
-  Send, e
+  Send, {p Down}
     delay()
-  Send, a
+  Send, {Click, R}
+    delay()
+  Send, {p Up}
+    delay()
+  Send, e
     delay()
 return
 
@@ -46,4 +54,5 @@ $Space::
       If !GetKeyState(Space,"P")
       break
     } 
+    delay()
 return
