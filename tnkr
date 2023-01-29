@@ -1,6 +1,6 @@
 #NoEnv
 #UseHook
-#Warn
+;#Warn
 #MaxThreadsPerHotkey 1
 #SingleInstance force
 
