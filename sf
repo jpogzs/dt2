@@ -14,25 +14,25 @@ Ins::Suspend
 SetKeyDelay, 0, 55
 
 q::	
-	Send, {m down}
-	MouseClick, right
-	Send, {m up}
-	Sleep 300
-  Send, q
-  Return
+    Send, {m down}
+    MouseClick, right
+    Send, {m up}
+    Sleep 300
+    Send, q
+    Return
 
-w::
-  Send, {m down}
-	MouseClick, right
-	Send, {m up}
-	Sleep 300
-	Send, w
-  Return
+w::	
+    Send, {m down}
+    MouseClick, right
+    Send, {m up}
+    Sleep 300
+    Send, w
+    Return
 
 e::	
-	Send, {m down}
-	MouseClick, right
-	Send, {m up}
-	Sleep 300
-	Send, e
-  Return
+    Send, {m down}
+    MouseClick, right
+    Send, {m up}
+    Sleep 300
+    Send, e
+    Return
