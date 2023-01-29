@@ -1,6 +1,9 @@
-;#UseHook
 #NoEnv
+#UseHook
+#Warn
+#MaxThreadsPerHotkey 1
 #SingleInstance force
+
 SendMode Input 
 SetWorkingDir %A_ScriptDir%  
 SetNumlockState, AlwaysOn
@@ -8,36 +11,15 @@ SetCapsLockState, Off
 
 Ins::Suspend
 
-delay()
-{	
-  Random, delay, 50, 80
-  Sleep, delay
-}
+SetKeyDelay, 0, 55
 
-$r::
-  Send, z
-    delay()
-  Send, x
-    delay()
-  Send, r
-    delay()
-return
+r::	
+    Send, z
+    Send, r
+    Return
 
-$f::
-  Send, g
-    delay()
-  Send, q
-    delay()
-  Send, w
-    delay()
-return
-
-$Space::
-  Loop
-    {
-      Send, {Space}
-      Sleep 10
-      If !GetKeyState(Space,"P")
-      break
-    } 
-return
+f::	
+    Send, q
+    Send, w
+    Send, g
+    Return
