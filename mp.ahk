@@ -14,6 +14,8 @@ Ins::Suspend
 SetKeyDelay, 0, 55
 
 f::	
+    Send, 1
+    Send, q
     Send, 2
     Send, w
     Send, 3
@@ -23,4 +25,5 @@ f::
     Send, 5
     Send, w
     Send, 1
+    Send, a
     Return
