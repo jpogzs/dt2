@@ -1,3 +1,5 @@
+```AHK
+
 #NoEnv
 #UseHook
 ;#Warn
