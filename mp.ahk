@@ -1,6 +1,3 @@
-
-```AHK
-
 #NoEnv
 #UseHook
 ;#Warn
@@ -27,6 +24,3 @@ f::
     Send, w
     Send, 1
     Return
-    
-    
-```
