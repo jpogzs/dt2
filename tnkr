@@ -22,4 +22,5 @@ f::
     Send, q
     Send, w
     Send, g
+    Send, m
     Return
